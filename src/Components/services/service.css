@@ -1,0 +1,19 @@
+
+.title {
+  font-size: 4vw;
+  text-align: center;
+}
+.title .title-part {
+  font-weight: 700;
+  font-family: "News Gothic Becker", sans-serif;
+  text-transform: uppercase;
+  display: block;
+  color: #bb105d;
+  padding: 50px;
+}
+@media screen and (max-width: 768px) {
+
+.mobilMar{
+  margin-top: -200px;
+}
+}

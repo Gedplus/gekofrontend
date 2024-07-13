@@ -1,0 +1,22 @@
+.divider1{
+    border:none;
+    width: 40%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #f6a117;
+    opacity: 1;
+    margin-bottom: 10px;
+}
+.footer{
+    height: 10px;
+    background-color: white;
+}
+@media screen and (max-width: 768px) {
+.mobfooter{
+    display: none;
+}
+.p{
+    font-size: 11px !important;
+}
+
+}
