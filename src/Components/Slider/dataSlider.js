@@ -6,10 +6,11 @@ import img4 from "../Assets/slide-joint.png"
 import img5 from "../Assets/gekolite.png"
 import img6 from "../Assets/accesoires.png"
 import img7 from "../Assets/1 (42).png"
+import img77 from "../Assets/G1.png"
 import img8 from "../Assets/env.png"
 const dataSlider = [
     {id:1 ,
-        image: img7,
+        image: img77,
 
     },
     {id:2 ,

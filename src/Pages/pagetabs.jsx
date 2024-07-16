@@ -45,7 +45,7 @@ const items = [
     ),
   },
   {
-    title: 'Colle Thermofusible',
+    title: 'Adjuvant',
     content: (
       <div className='border-2 border-blue-400 rounded-lg p-4'>
         <h1 className='text-3xl text-blue-600'>Title Test 3</h1>

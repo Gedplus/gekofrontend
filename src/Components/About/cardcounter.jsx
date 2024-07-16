@@ -9,10 +9,7 @@ const CardCounter =()=>{
         <div class="content">
   <div className="wrapper1"  >
         
-                    <div className="container2">
-                    <InsightsIcon className="i"  style={{ fontSize: 60 }} /> 
-           <span className="num" data-val="7"><CountUp  enableScrollSpy end={7} duration={2}/></span>
-                    <span className="text">Ans d'experiences</span></div>
+                    
                     <div className="container2">
                     <FormatColorFillIcon className="i"  style={{ fontSize: 60 }} /> 
                       <span className="num" data-val="40"><CountUp enableScrollSpy duration={2} end={40}/></span>
