@@ -50,7 +50,7 @@ const Footer = () => {
     <hr className="divider1"/>
     <div className='footer-links d-flex flex-column'>
       
-<Link className="text-white py-2 mb-1 ">Acceuil</Link>
+<Link className="text-white py-2 mb-1 ">Accueil </Link>
       <Link className="text-white py-2 mb-1 ">À propos de nous</Link>
       <Link className="text-white py-2 mb-1 ">Produits</Link>
       <Link className="text-white py-2 mb-1 ">Actualité</Link>
