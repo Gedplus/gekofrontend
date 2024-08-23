@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "react-router-dom";
-import video from "./Assets/video.mp4"
 const BlogCard =(props) =>{
     const {id , title , description , date , image} = props;
     return(
@@ -9,10 +8,18 @@ const BlogCard =(props) =>{
 
 
                 {id == "65eae30b9abdc1483e1d7586" ? (<div className="card-image ">
-          <video preload="auto" width="500" height="500" style={{borderTopLeftRadius:"10px" , borderTopRightRadius:"10px"}} controls>
-        <source src={`${video}` } />
-    
-        </video>
+        
+        <iframe
+    width="475"
+    height="268"
+    src="https://www.youtube.com/embed/1knQCJwqSfM"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    style={{borderTopLeftRadius: "10px", borderTopRightRadius: "10px"}}
+></iframe>
+
 </div>) :(<div className="card-image ">
     <img src={image ? image : "images/blog-1.jpg"} className=" w-100"  style={{height:"265px"}} alt="blog" />
 </div>)}

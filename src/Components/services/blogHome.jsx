@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import Container from "../Container";
 import BlogCard from "../BlogCard";
 import { useDispatch, useSelector } from "react-redux";
@@ -6,20 +6,24 @@ import  moment from "moment";
 import { getAllBlogs } from "../../features/blogs/blogSlice";
 import BlogCardHome from "../BlogCardHome";
 const BlogHome =()=>{
-    const blogState = useSelector((state) => state?.blog?.blog);
-    const dispatch = useDispatch();
-    const getProducts = () =>{
-      dispatch( getAllBlogs());
-  }
-  useEffect(() => {
-    getProducts();
-},[ ]);
+    const [blogs, setBlogs] = useState([]);
+
+    useEffect(() => {
+        // Fetch blogs from the API
+        fetch("http://localhost:5000/api/blog")
+            .then(response => response.json())
+            .then(data => {
+                setBlogs(data);
+
+            })
+            .catch(error => console.error("Error fetching blogs:", error));
+    }, []);
   
     return(
         <Container class1="blog-wrapper home-wrapper-2 py-5 ">
     
             <div className='row'>
-            {blogState?.map((item,index)=>{
+            {blogs?.map((item,index)=>{
          if(index < 3) {
           return(
             <div className="col-3 "key={item?._id}>
