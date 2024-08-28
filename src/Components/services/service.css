@@ -1,19 +1,52 @@
-
-.title {
-  font-size: 4vw;
-  text-align: center;
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* Card Container */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Title Styles */
+.title {
+  font-size: 4vw; /* Utiliser une unité relative pour la taille de police */
+  text-align: center;
+  margin: 0;
+}
+
 .title .title-part {
   font-weight: 700;
   font-family: "News Gothic Becker", sans-serif;
   text-transform: uppercase;
   display: block;
   color: #bb105d;
-  padding: 50px;
+  padding: 20px; /* Réduit la taille du padding pour des écrans plus petits */
 }
-@media screen and (max-width: 768px) {
 
-.mobilMar{
-  margin-top: -200px;
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 6vw; /* Augmente la taille de la police pour les petits écrans */
+  }
+
+  .title .title-part {
+    padding: 10px; /* Réduit le padding pour les petits écrans */
+  }
 }
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 8vw; /* Ajuste encore la taille de la police pour les très petits écrans */
+  }
+
+  .title .title-part {
+    padding: 5px; /* Réduit encore plus le padding pour les très petits écrans */
+  }
 }

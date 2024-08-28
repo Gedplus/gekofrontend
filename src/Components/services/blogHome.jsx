@@ -26,7 +26,7 @@ const BlogHome =()=>{
             {blogs?.map((item,index)=>{
          if(index < 3) {
           return(
-            <div className="col-3 "key={item?._id}>
+            <div className="col-lg-3 col-sm-12 "key={item?._id}>
         <BlogCardHome id={item?._id} title={item?.title} description={item?.description} date={moment().format(item?.created_at)} image={item?.images[0]?.url} />
         </div>
         

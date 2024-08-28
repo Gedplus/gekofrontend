@@ -1,0 +1,56 @@
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .col-3, .col-9 {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .filter-card {
+      margin-bottom: 1rem;
+    }
+  
+    .filter-sort-grid {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .filter-sort-grid .d-flex {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .products-list {
+      padding-bottom: 1rem;
+    }
+    
+    .searchWidth {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .filter-card {
+      padding: 0.5rem;
+    }
+  
+    .filter-title {
+      font-size: 1rem;
+    }
+  
+    .button-59 {
+      width: 100%;
+      font-size: 0.875rem;
+    }
+  
+    .grid img {
+      width: 24px;
+      height: auto;
+    }
+  
+    .totalproducts {
+      font-size: 0.875rem;
+    }
+  }
+  

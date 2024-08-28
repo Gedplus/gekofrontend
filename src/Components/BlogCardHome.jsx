@@ -7,17 +7,17 @@ const BlogCardHome =(props) =>{
             <div className="blog-card">
        {id == "65eae30b9abdc1483e1d7586" ? (<div className="card-image ">
          
-
-        <iframe
-    width="307"
-    height="175"
+<div  className="col-lg-3 col-sm-12 ">
+<iframe
+    width="475"
+    height="268"
     src="https://www.youtube.com/embed/1knQCJwqSfM"
     title="YouTube video player"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
     style={{borderTopLeftRadius: "10px", borderTopRightRadius: "10px"}}
-></iframe>
+></iframe></div>
 </div>) :(<div className="card-image ">
     <img src={image ? image : "images/blog-1.jpg"} className=" w-100"  style={{height:"175px"}} alt="blog" />
 </div>)}

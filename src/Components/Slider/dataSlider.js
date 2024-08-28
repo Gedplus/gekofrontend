@@ -1,13 +1,13 @@
 
-import img1 from "../Assets/Ciment-colle.png"
-import img2 from "../Assets/colle.png"
-import img3 from "../Assets/etanchité.png"
-import img4 from "../Assets/slide-joint.png"
+import img1 from "../Assets/img/2.png"
+import img2 from "../Assets/img/3.png"
+import img3 from "../Assets/img/4.png"
+import img4 from "../Assets/img/6.png"
 import img5 from "../Assets/gekolite.png"
-import img6 from "../Assets/accesoires.png"
+import img6 from "../Assets/img/5.png"
 import img7 from "../Assets/1 (42).png"
 import img77 from "../Assets/G1.png"
-import img8 from "../Assets/env.png"
+import img8 from "../Assets/img/1.png"
 const dataSlider = [
     {id:1 ,
         image: img77,

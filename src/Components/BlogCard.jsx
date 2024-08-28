@@ -8,7 +8,7 @@ const BlogCard =(props) =>{
 
 
                 {id == "65eae30b9abdc1483e1d7586" ? (<div className="card-image ">
-        
+        <div className="col-lg-3 col-sm-12 ">
         <iframe
     width="475"
     height="268"
@@ -18,7 +18,7 @@ const BlogCard =(props) =>{
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
     style={{borderTopLeftRadius: "10px", borderTopRightRadius: "10px"}}
-></iframe>
+></iframe></div>
 
 </div>) :(<div className="card-image ">
     <img src={image ? image : "images/blog-1.jpg"} className=" w-100"  style={{height:"265px"}} alt="blog" />

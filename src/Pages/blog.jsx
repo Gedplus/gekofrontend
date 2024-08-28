@@ -54,7 +54,7 @@ const Blog = () => {
                     <div className="col-9">
                         <div className="row">
                             {blogs.filter(blog => !category || blog.category === category).map((item, index) => (
-                                <div className="col-6 mb-3" key={item?._id}>
+                                <div className="col-lg-6 col-sm-12 mb-3" key={item?._id}>
                                     <BlogCard
                                         id={item?._id}
                                         title={item?.title}

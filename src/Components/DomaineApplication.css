@@ -1,50 +1,89 @@
-.swiper {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-  }
+/* Conteneur pour le contenu */
+.content {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* Conteneur Swiper */
+.mySwiper {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Style des diapositives Swiper */
+.swiper-slide1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Utilise toute la largeur */
+  height: auto; /* Hauteur automatique pour maintenir le ratio */
+  position: relative; /* Assure le positionnement de l'iframe */
+  overflow: hidden; /* Évite que le contenu déborde */
+}
+
+.swiper-iframe {
+  width: 100%; /* Utilise toute la largeur de la diapositive */
+  height: 250px; /* Utilise toute la hauteur de la diapositive */
+  border: none;
+  object-fit: contain; /* Ajuste l'iframe pour contenir la vidéo sans découpe */
+}
+
+/* Style de la pagination */
+.swiper-pagination {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: -12px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background: #000;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+/* Boutons de navigation */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff; /* Couleur des flèches */
+  width: 50px; /* Largeur des boutons */
+  height: 50px; /* Hauteur des boutons */
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  border-radius: 50%; /* Boutons circulaires */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10; /* Assure que les boutons sont au-dessus du contenu */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 24px; /* Taille de police des flèches */
+}
+
+/* Styles réactifs */
+@media screen and (max-width: 768px) {
   .swiper-slide1 {
-    background-position: center;
-    background-size: cover;
-    width: 400px;
-    height: 200px;
+    width: 80%; /* Largeur légèrement réduite pour les écrans moyens */
   }
-  
-  .swiper-slide1 img {
-    display: block;
-    width: 100%;
+
+  .swiper-iframe {
+    height: 200px; /* Ajuste la hauteur pour les écrans plus petits */
   }
-  .swiper-pagination {
-    position: relative;
-    width: 15rem !important;
-    bottom: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .swiper-slide1 {
+    width: 100%; /* Largeur totale pour les petits écrans */
   }
-  
-  .swiper-pagination .swiper-pagination-bullet {
-    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+
+  .swiper-iframe {
+    height: 150px; /* Ajuste la hauteur pour les très petits écrans */
   }
-  
-  .swiper-pagination .swiper-pagination-bullet-active {
-    background: var(--primary);
-  }
-  @media screen and (max-width: 768px) {
- 
-    .swiper-slide1 {
-      width: 8rem !important;
-      height: 2.5rem !important;
-    }
-  
-  
-  }
+}

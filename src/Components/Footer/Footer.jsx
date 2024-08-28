@@ -34,7 +34,7 @@ const Footer = () => {
 <a className='text-white' href=''>
 <BsGithub  className='fs-4' />
 </a>
-<a className='text-white' href=''>
+<a className='text-white' target="_blank" href='https://www.youtube.com/@Geko-2024'>
 <BsYoutube className='fs-4' />
 </a>
 </div>
@@ -51,10 +51,10 @@ const Footer = () => {
     <div className='footer-links d-flex flex-column'>
       
 <Link className="text-white py-2 mb-1 ">Accueil </Link>
-      <Link className="text-white py-2 mb-1 ">À propos de nous</Link>
-      <Link className="text-white py-2 mb-1 ">Produits</Link>
-      <Link className="text-white py-2 mb-1 ">Actualité</Link>
-      <Link className="text-white py-2 mb-1 ">Contact</Link></div></div>
+      <Link className="text-white py-2 mb-1 " to='/Apropos'>À propos de nous</Link>
+      <Link className="text-white py-2 mb-1 " to='/Produits' >Produits</Link>
+      <Link className="text-white py-2 mb-1 " to='/blogs'>Actualité</Link>
+      <Link className="text-white py-2 mb-1 " to='/contact'>Contact</Link></div></div>
   </div>
 </div>
 
