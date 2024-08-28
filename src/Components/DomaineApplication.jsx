@@ -29,14 +29,12 @@ const DomaineApplication = () => {
       >
         {/* Array of video URLs */}
         {[
-          "https://www.youtube.com/embed/LpsdF1XnCuM",
-          "https://www.youtube.com/embed/1Chj_txnE0A",
-          "https://youtube.com/embed/iqWcStFQRmg",
-          "https://youtube.com/embed/0qmplCPgQEU",
-          "https://youtube.com/embed/-5PwwiWMkBw",
-          "https://youtube.com/embed/rSvCL8m_0AY",
-          "https://youtube.com/embed/R-6X3TXC7II?feature=share",
-          "https://youtube.com/embed/ndc7vP1xk8c"
+          "https://youtube.com/embed/Yfj0zDYYz6E",
+          "https://youtube.com/embed/NO4CcB9Ij2E",
+          "https://youtube.com/embed/9vX_ybnwNV0",
+          "https://youtube.com/embed/1Q9xmc2qyAg",
+          "https://youtube.com/embed/FEqnWyHEs2E",
+          "https://youtube.com/embed/SOkDJDPxTnU"
         ].map((src, index) => (
           <SwiperSlide key={index} className="swiper-slide1">
             <iframe

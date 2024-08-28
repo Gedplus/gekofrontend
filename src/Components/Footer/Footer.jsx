@@ -34,7 +34,7 @@ const Footer = () => {
 <a className='text-white' href=''>
 <BsGithub  className='fs-4' />
 </a>
-<a className='text-white' target="_blank" href='https://www.youtube.com/@Geko-2024'>
+<a className='text-white' target="_blank" href='https://www.youtube.com/@GEKOtn'>
 <BsYoutube className='fs-4' />
 </a>
 </div>
