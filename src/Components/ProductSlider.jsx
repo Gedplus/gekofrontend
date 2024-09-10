@@ -48,7 +48,7 @@ const ProductSlider =()=>{
           <SwiperSlide>
           <div className="image">
             <img src={slide_image_2} alt="slide_image " />
-            <div className="imgContent"><p><a className="lienstyle" href={cm10}>Fiche Technique</a></p></div>
+            <div className="imgContent"><p><a className="lienstyle" href={cm30}>Fiche Technique</a></p></div>
             </div> 
           </SwiperSlide>
           <SwiperSlide>
@@ -60,14 +60,14 @@ const ProductSlider =()=>{
           <SwiperSlide>
           <div className="image">
             <img src={slide_image_4} alt="slide_image " />
-            <div className="imgContent"><p><a className="lienstyle" href={cm30}>Fiche Technique</a></p></div>
+            <div className="imgContent"><p><a className="lienstyle" href={eco}>Fiche Technique</a></p></div>
             </div> 
           </SwiperSlide>
        
           <SwiperSlide>
           <div className="image">
             <img src={slide_image_5} alt="slide_image " />
-            <div className="imgContent"><p><a className="lienstyle" href={eco}>Fiche Technique</a></p></div>
+            <div className="imgContent"><p><a className="lienstyle" href={cm10}>Fiche Technique</a></p></div>
             </div> 
           </SwiperSlide>
       

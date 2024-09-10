@@ -37,14 +37,14 @@ const ProductSlidercat3 =()=>{
           <SwiperSlide>
           <div className="image">
             <img src={slide_image_1} alt="slide_image " />
-            <div className="imgContent"><p><a className="lienstyle" href={gekolatex}>Fiche Technique</a></p></div>
+            <div className="imgContent"><p><a className="lienstyle" href={gekolite}>Fiche Technique</a></p></div>
             </div>
           </SwiperSlide>
      
           <SwiperSlide>
           <div className="image">
             <img src={slide_image_2} alt="slide_image " />
-            <div className="imgContent"><p><a className="lienstyle" href={gekolite}>Fiche Technique</a></p></div>
+            <div className="imgContent"><p><a className="lienstyle" href={gekolatex}>Fiche Technique</a></p></div>
             </div>
           </SwiperSlide>
          
