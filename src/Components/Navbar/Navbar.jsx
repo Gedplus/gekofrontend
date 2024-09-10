@@ -47,7 +47,7 @@ const Navbar = () => {
 <ul className={sidebar ? "nav-links-sidebar":"nav-menu"}  >
     <li onClick={()=>{setMenu("Acceuil")}}  className={menu==="Acceuil"?"liHover":""}><Link to='/'  className={menu==="Acceuil"?"liHover":""}>Accueil </Link></li>
 
-    <li onClick={()=>{setMenu("Acceuil2")}} className={menu==="Acceuil2"?"liHover":""}><Link to='/Apropos'  className={menu==="Acceuil2"?"liHover":""}>À propos de nous </Link></li>
+    <li onClick={()=>{setMenu("Acceuil2")}} className={menu==="Acceuil2"?"liHover":""}><Link to='/Apropos'  className={menu==="Acceuil2"?"liHover":""}>A propos de nous </Link></li>
     <li onClick={()=>{setMenu("Acceuil1")}}  className={menu==="Acceuil1"?"liHover":""}><Link to='/Produits'  className={menu==="Acceuil1"?"liHover":""}>Produits</Link></li>
    
     <li  onClick={()=>{setMenu("Acceuil4")}} className={menu==="Acceuil4"?"liHover":""}><Link to='/blogs'  className={menu==="Acceuil4"?"liHover":""}>Actualité</Link></li>
